@@ -1,0 +1,280 @@
+prompt --application/shared_components/navigation/breadcrumbs/breadcrumb
+begin
+--   Manifest
+--     MENU: Breadcrumb
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2026.03.30'
+,p_release=>'26.1.2'
+,p_default_workspace_id=>163277114777204535509
+,p_default_application_id=>119925
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_JUBYORACLEWORKSPACE'
+);
+wwv_flow_imp_shared.create_menu(
+ p_id=>wwv_flow_imp.id(16690055689891946706)
+,p_name=>'Breadcrumb'
+,p_static_id=>'breadcrumb'
+,p_created_on=>wwv_flow_imp.dz('20260709161838Z')
+,p_updated_on=>wwv_flow_imp.dz('20260727092609Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(21255852614135312434)
+,p_short_name=>'Date Picker'
+,p_static_id=>'date-picker'
+,p_link=>'f?p=&APP_ID.:34:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>34
+,p_created_on=>wwv_flow_imp.dz('20260727083043Z')
+,p_updated_on=>wwv_flow_imp.dz('20260727083043Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(20518478501280768109)
+,p_short_name=>'Department Employee'
+,p_static_id=>'department-employee'
+,p_link=>'f?p=&APP_ID.:13:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>13
+,p_created_on=>wwv_flow_imp.dz('20260723194000Z')
+,p_updated_on=>wwv_flow_imp.dz('20260723194000Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(21047780339321632203)
+,p_short_name=>'Department LOV'
+,p_static_id=>'department-lov'
+,p_link=>'f?p=&APP_ID.:15:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>15
+,p_created_on=>wwv_flow_imp.dz('20260726072613Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726072613Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(21248405004877348092)
+,p_short_name=>'department RadioButtonPage'
+,p_static_id=>'department-radiobuttonpage'
+,p_link=>'f?p=&APP_ID.:33:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>33
+,p_created_on=>wwv_flow_imp.dz('20260727073852Z')
+,p_updated_on=>wwv_flow_imp.dz('20260727073852Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(21152612365766462726)
+,p_short_name=>'department sum(salary) computation'
+,p_static_id=>'department-sum-salary-computation'
+,p_link=>'f?p=&APP_ID.:16:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>16
+,p_created_on=>wwv_flow_imp.dz('20260726180438Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726180438Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19604564360756074277)
+,p_short_name=>'department wise employee count'
+,p_static_id=>'department-wise-employee-count'
+,p_link=>'f?p=&APP_ID.:11:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>11
+,p_created_on=>wwv_flow_imp.dz('20260720134634Z')
+,p_updated_on=>wwv_flow_imp.dz('20260720134634Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(16972936482178694672)
+,p_short_name=>'Department wise employees'
+,p_static_id=>'department-wise-employees'
+,p_link=>'f?p=&APP_ID.:17:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>17
+,p_created_on=>wwv_flow_imp.dz('20260710134958Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710134958Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19786761057930148947)
+,p_short_name=>'Department wise employees using search'
+,p_static_id=>'department-wise-employees-using-search'
+,p_link=>'f?p=&APP_ID.:14:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>14
+,p_created_on=>wwv_flow_imp.dz('20260721073648Z')
+,p_updated_on=>wwv_flow_imp.dz('20260721073648Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(16975080946974411816)
+,p_short_name=>'Departments'
+,p_static_id=>'departments'
+,p_link=>'f?p=&APP_ID.:20:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>20
+,p_created_on=>wwv_flow_imp.dz('20260710140037Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140037Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19850616391057786662)
+,p_short_name=>'Emploee tree Form'
+,p_static_id=>'emploee-tree-form'
+,p_link=>'f?p=&APP_ID.:8:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>8
+,p_created_on=>wwv_flow_imp.dz('20260721120945Z')
+,p_updated_on=>wwv_flow_imp.dz('20260721120945Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(16752412092093308377)
+,p_short_name=>'Employee'
+,p_static_id=>'employee'
+,p_link=>'f?p=&APP_ID.:6:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>6
+,p_created_on=>wwv_flow_imp.dz('20260709210322Z')
+,p_updated_on=>wwv_flow_imp.dz('20260709210322Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(17043406135516773837)
+,p_short_name=>'Employee Directory'
+,p_static_id=>'employee-directory'
+,p_link=>'f?p=&APP_ID.:2:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>2
+,p_created_on=>wwv_flow_imp.dz('20260710193629Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710193629Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(17895815369194203690)
+,p_short_name=>'Employee dynamic action'
+,p_static_id=>'employee-dynamic-action'
+,p_link=>'f?p=&APP_ID.:3:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>3
+,p_created_on=>wwv_flow_imp.dz('20260713080556Z')
+,p_updated_on=>wwv_flow_imp.dz('20260713080556Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19583967794511346617)
+,p_short_name=>'Employee dynamic action server'
+,p_static_id=>'employee-dynamic-action-server'
+,p_link=>'f?p=&APP_ID.:9:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>9
+,p_created_on=>wwv_flow_imp.dz('20260720114517Z')
+,p_updated_on=>wwv_flow_imp.dz('20260720114517Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(20419345026567921723)
+,p_short_name=>'employee form using region'
+,p_static_id=>'employee-form-using-region'
+,p_link=>'f?p=&APP_ID.:12:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>12
+,p_created_on=>wwv_flow_imp.dz('20260723104748Z')
+,p_updated_on=>wwv_flow_imp.dz('20260723104748Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(20417313836914538057)
+,p_parent_id=>wwv_flow_imp.id(20417312503174538055)
+,p_short_name=>'Employee form using wizard'
+,p_static_id=>'employee-form-using-wizard'
+,p_link=>'f?p=&APP_ID.:10:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>10
+,p_created_on=>wwv_flow_imp.dz('20260723104139Z')
+,p_updated_on=>wwv_flow_imp.dz('20260723104139Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(20417312503174538055)
+,p_short_name=>'employee form using wizard(intr_grid)'
+,p_static_id=>'employee-form-using-wizard-intr-grid'
+,p_link=>'f?p=&APP_ID.:5:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>5
+,p_created_on=>wwv_flow_imp.dz('20260723104139Z')
+,p_updated_on=>wwv_flow_imp.dz('20260723104139Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(17268506256342828702)
+,p_short_name=>'Employee Search'
+,p_static_id=>'employee-search'
+,p_link=>'f?p=&APP_ID.:4:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>4
+,p_created_on=>wwv_flow_imp.dz('20260711122538Z')
+,p_updated_on=>wwv_flow_imp.dz('20260711122538Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19843887757817950859)
+,p_parent_id=>wwv_flow_imp.id(17043406135516773837)
+,p_short_name=>'Employee tree'
+,p_static_id=>'employee-tree'
+,p_link=>'f?p=&APP_ID.:22:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>22
+,p_created_on=>wwv_flow_imp.dz('20260721113920Z')
+,p_updated_on=>wwv_flow_imp.dz('20260721113920Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(16690055823387946706)
+,p_short_name=>'Home'
+,p_static_id=>'home'
+,p_link=>'f?p=&APP_ID.:1:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>1
+,p_created_on=>wwv_flow_imp.dz('20260709161838Z')
+,p_updated_on=>wwv_flow_imp.dz('20260709161838Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(19797568266679869694)
+,p_short_name=>'Image Upload'
+,p_static_id=>'image-upload'
+,p_link=>'f?p=&APP_ID.:19:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>19
+,p_created_on=>wwv_flow_imp.dz('20260721083908Z')
+,p_updated_on=>wwv_flow_imp.dz('20260721083908Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(20039459290517410259)
+,p_short_name=>'Project'
+,p_static_id=>'project'
+,p_link=>'f?p=&APP_ID.:24:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>24
+,p_created_on=>wwv_flow_imp.dz('20260722063341Z')
+,p_updated_on=>wwv_flow_imp.dz('20260722063341Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_menu_option(
+ p_id=>wwv_flow_imp.id(20042033579301820372)
+,p_short_name=>'Project Calender'
+,p_static_id=>'project-calender'
+,p_link=>'f?p=&APP_ID.:26:&APP_SESSION.::&DEBUG.:::'
+,p_page_id=>26
+,p_created_on=>wwv_flow_imp.dz('20260722064415Z')
+,p_updated_on=>wwv_flow_imp.dz('20260722064415Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/

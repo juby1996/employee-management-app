@@ -1,0 +1,308 @@
+prompt --application/pages/page_00021
+begin
+--   Manifest
+--     PAGE: 00021
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2026.03.30'
+,p_release=>'26.1.2'
+,p_default_workspace_id=>163277114777204535509
+,p_default_application_id=>119925
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_JUBYORACLEWORKSPACE'
+);
+wwv_flow_imp_page.create_page(
+ p_id=>21
+,p_name=>'Departments'
+,p_alias=>'DEPARTMENTS'
+,p_page_mode=>'MODAL'
+,p_step_title=>'Departments'
+,p_autocomplete_on_off=>'OFF'
+,p_step_template=>1662662927374504442
+,p_page_template_options=>'#DEFAULT#:js-dialog-class-t-Drawer--pullOutEnd'
+,p_dialog_chained=>'N'
+,p_dialog_resizable=>'Y'
+,p_protection_level=>'C'
+,p_page_component_map=>'02'
+,p_created_on=>wwv_flow_imp.dz('20260710140030Z')
+,p_last_updated_on=>wwv_flow_imp.dz('20260710201713Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_last_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(16975058762615411314)
+,p_plug_name=>'Buttons'
+,p_static_id=>'buttons'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>2127905476394690047
+,p_plug_display_sequence=>20
+,p_plug_display_point=>'REGION_POSITION_03'
+,p_plug_item_display_point=>'ABOVE'
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_plug(
+ p_id=>wwv_flow_imp.id(16975055543218411305)
+,p_plug_name=>'Departments'
+,p_static_id=>'departments'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>4502917002193490937
+,p_plug_display_sequence=>10
+,p_plug_item_display_point=>'ABOVE'
+,p_query_type=>'TABLE'
+,p_query_table=>'DEPARTMENTS'
+,p_include_rowid_column=>false
+,p_is_editable=>true
+,p_edit_operations=>'i:u:d'
+,p_lost_update_check_type=>'VALUES'
+,p_plug_source_type=>'NATIVE_FORM'
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710201713Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(16975059153465411315)
+,p_button_sequence=>10
+,p_button_plug_id=>wwv_flow_imp.id(16975058762615411314)
+,p_button_name=>'CANCEL'
+,p_static_id=>'cancel'
+,p_show_as_disabled=>false
+,p_button_action=>'DEFINED_BY_DA_ACTION'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4073839297780169708
+,p_button_image_alt=>'Cancel'
+,p_button_position=>'CLOSE'
+,p_warn_on_unsaved_changes=>null
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_component_da_action(
+ p_id=>wwv_flow_imp.id(16975059685710411316)
+,p_button_id=>wwv_flow_imp.id(16975059153465411315)
+,p_action_sequence=>10
+,p_action=>'NATIVE_DIALOG_CANCEL'
+,p_static_id=>'native-dialog-cancel'
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(16975060978795411319)
+,p_button_sequence=>40
+,p_button_plug_id=>wwv_flow_imp.id(16975058762615411314)
+,p_button_name=>'CREATE'
+,p_static_id=>'create'
+,p_show_as_disabled=>false
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4073839297780169708
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Create'
+,p_button_position=>'NEXT'
+,p_button_condition=>'P21_DEPT_ID'
+,p_button_condition_type=>'ITEM_IS_NULL'
+,p_database_action=>'INSERT'
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(16975060171275411317)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_imp.id(16975058762615411314)
+,p_button_name=>'DELETE'
+,p_static_id=>'delete'
+,p_show_as_disabled=>false
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4073839297780169708
+,p_button_image_alt=>'Delete'
+,p_button_position=>'DELETE'
+,p_button_execute_validations=>'N'
+,p_confirm_message=>'&APP_TEXT$DELETE_MSG!RAW.'
+,p_confirm_style=>'danger'
+,p_button_condition=>'P21_DEPT_ID'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_database_action=>'DELETE'
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_button(
+ p_id=>wwv_flow_imp.id(16975060541212411318)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_imp.id(16975058762615411314)
+,p_button_name=>'SAVE'
+,p_static_id=>'save'
+,p_show_as_disabled=>false
+,p_button_action=>'SUBMIT'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>4073839297780169708
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Apply Changes'
+,p_button_position=>'NEXT'
+,p_button_condition=>'P21_DEPT_ID'
+,p_button_condition_type=>'ITEM_IS_NOT_NULL'
+,p_database_action=>'UPDATE'
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(16975057041873411310)
+,p_name=>'P21_CREATED_AT'
+,p_source_data_type=>'DATE'
+,p_item_sequence=>40
+,p_item_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_item_source_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_item_default=>'SYSDATE'
+,p_item_default_type=>'EXPRESSION'
+,p_item_default_language=>'PLSQL'
+,p_source=>'CREATED_AT'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710142322Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(16975055838190411307)
+,p_name=>'P21_DEPT_ID'
+,p_source_data_type=>'NUMBER'
+,p_is_primary_key=>true
+,p_is_query_only=>true
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_item_source_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_source=>'DEPT_ID'
+,p_display_as=>'NATIVE_HIDDEN'
+,p_is_persistent=>'N'
+,p_protection_level=>'S'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'value_protected', 'Y')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(16975056208531411309)
+,p_name=>'P21_DEPT_NAME'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_item_source_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_prompt=>'Dept Name'
+,p_source=>'DEPT_NAME'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>100
+,p_label_alignment=>'RIGHT'
+,p_field_template=>1610598304472262251
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'disabled', 'N',
+  'submit_when_enter_pressed', 'N',
+  'subtype', 'TEXT',
+  'trim_spaces', 'BOTH')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_item(
+ p_id=>wwv_flow_imp.id(16975056622798411310)
+,p_name=>'P21_LOCATION'
+,p_source_data_type=>'VARCHAR2'
+,p_item_sequence=>30
+,p_item_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_item_source_plug_id=>wwv_flow_imp.id(16975055543218411305)
+,p_prompt=>'Location'
+,p_source=>'LOCATION'
+,p_display_as=>'NATIVE_TEXT_FIELD'
+,p_cSize=>32
+,p_cMaxlength=>100
+,p_label_alignment=>'RIGHT'
+,p_field_template=>1610598304472262251
+,p_item_template_options=>'#DEFAULT#'
+,p_is_persistent=>'N'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'disabled', 'N',
+  'submit_when_enter_pressed', 'N',
+  'subtype', 'TEXT',
+  'trim_spaces', 'BOTH')).to_clob
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(16975062231014411321)
+,p_process_sequence=>50
+,p_process_point=>'AFTER_SUBMIT'
+,p_process_type=>'NATIVE_CLOSE_WINDOW'
+,p_process_name=>'Close Dialog'
+,p_static_id=>'close-dialog'
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_process_when=>'CREATE,SAVE,DELETE'
+,p_process_when_type=>'REQUEST_IN_CONDITION'
+,p_internal_uid=>16975062231014411321
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(16975061303489411320)
+,p_process_sequence=>10
+,p_process_point=>'BEFORE_HEADER'
+,p_region_id=>wwv_flow_imp.id(16975055543218411305)
+,p_process_type=>'NATIVE_FORM_INIT'
+,p_process_name=>'Initialize form Departments'
+,p_static_id=>'initialize-form-departments'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'current_row_total_item', '',
+  'next_primary_key_items', '',
+  'previous_primary_key_items', '')).to_clob
+,p_internal_uid=>16975061303489411320
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_page.create_page_process(
+ p_id=>wwv_flow_imp.id(16975061855386411321)
+,p_process_sequence=>10
+,p_process_point=>'AFTER_SUBMIT'
+,p_region_id=>wwv_flow_imp.id(16975055543218411305)
+,p_process_type=>'NATIVE_FORM_DML'
+,p_process_name=>'Process form Departments'
+,p_static_id=>'process-form-departments'
+,p_attributes=>wwv_flow_t_plugin_attributes(wwv_flow_t_varchar2(
+  'lock_row', 'Y',
+  'prevent_lost_updates', 'Y',
+  'return_primary_keys_after_insert', 'Y',
+  'target_type', 'REGION_SOURCE')).to_clob
+,p_error_display_location=>'INLINE_IN_NOTIFICATION'
+,p_internal_uid=>16975061855386411321
+,p_created_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_updated_on=>wwv_flow_imp.dz('20260710140032Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/

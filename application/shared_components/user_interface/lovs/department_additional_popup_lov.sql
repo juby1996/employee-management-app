@@ -1,0 +1,78 @@
+prompt --application/shared_components/user_interface/lovs/department_additional_popup_lov
+begin
+--   Manifest
+--     DEPARTMENT_ADDITIONAL_POPUP_LOV
+--   Manifest End
+wwv_flow_imp.component_begin (
+ p_version_yyyy_mm_dd=>'2026.03.30'
+,p_release=>'26.1.2'
+,p_default_workspace_id=>163277114777204535509
+,p_default_application_id=>119925
+,p_default_id_offset=>0
+,p_default_owner=>'WKSP_JUBYORACLEWORKSPACE'
+);
+wwv_flow_imp_shared.create_list_of_values(
+ p_id=>wwv_flow_imp.id(21064093108371262637)
+,p_lov_name=>'DEPARTMENT_ADDITIONAL_POPUP_LOV'
+,p_static_id=>'department-additional-popup-lov'
+,p_lov_query=>'select dept_name name,dept_id id ,location,(select sum(salary) from employees emp where emp.dept_id =d.dept_id) salary from departments d;'
+,p_source_type=>'SQL'
+,p_location=>'LOCAL'
+,p_return_column_name=>'ID'
+,p_display_column_name=>'NAME'
+,p_default_sort_column_name=>'NAME'
+,p_default_sort_direction=>'ASC'
+,p_version_scn=>'SH256:masw9Bt9F6K_GD7RAIgqoJCQ_Nq5Gq6FoAPlkdeo_Lo'
+,p_created_on=>wwv_flow_imp.dz('20260726091118Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_list_of_values_cols(
+ p_id=>wwv_flow_imp.id(21064420660851269847)
+,p_query_column_name=>'ID'
+,p_display_sequence=>10
+,p_data_type=>'NUMBER'
+,p_is_visible=>'N'
+,p_is_searchable=>'N'
+,p_created_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_list_of_values_cols(
+ p_id=>wwv_flow_imp.id(21064421345022269850)
+,p_query_column_name=>'LOCATION'
+,p_heading=>'Location'
+,p_display_sequence=>30
+,p_data_type=>'VARCHAR2'
+,p_created_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_list_of_values_cols(
+ p_id=>wwv_flow_imp.id(21064420937521269849)
+,p_query_column_name=>'NAME'
+,p_heading=>'Name'
+,p_display_sequence=>20
+,p_data_type=>'VARCHAR2'
+,p_created_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp_shared.create_list_of_values_cols(
+ p_id=>wwv_flow_imp.id(21064421757093269851)
+,p_query_column_name=>'SALARY'
+,p_heading=>'Salary'
+,p_display_sequence=>40
+,p_data_type=>'NUMBER'
+,p_created_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_updated_on=>wwv_flow_imp.dz('20260726091230Z')
+,p_created_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+,p_updated_by=>'JUBYGHEEVARGHESE1996@GMAIL.COM'
+);
+wwv_flow_imp.component_end;
+end;
+/
