@@ -15,7 +15,7 @@ This application provides an intuitive interface for managing employee records, 
 
 ## 📸 Screenshots
 
-![App Dashboard](screenshots/dashboard.png)
+![employee directory-img](employee directory-img)
 *Figure 1: Application Dashboard & Key Analytics*
 
 <p float="left">
