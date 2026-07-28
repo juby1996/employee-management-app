@@ -15,15 +15,14 @@ This application provides an intuitive interface for managing employee records, 
 
 ## 📸 Screenshots
 
-![employee directory image](employee directory-img.png)
-*Figure 1: Application Dashboard & Key Analytics*
+![Employee Directory](employee_directory_img)
+*Figure 1: Employee Directory & Key Analytics*
 
 <p float="left">
-  <img src="screenshots/employees_list.png" width="48%" alt="Employees List" />
-  <img src="screenshots/department_mgmt.png" width="48%" alt="Department Management" />
+  <img src="Department_lov_img" width="48%" alt="Department LOV" />
+  <img src="Project_Calendar_img" width="48%" alt="Project Calendar" />
 </p>
-*Figure 2: Employee Interactive Report & Department Setup*
-
+*Figure 2: Department Setup & Project Calendar*
 ---
 
 ## ✨ Features
