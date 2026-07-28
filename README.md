@@ -39,6 +39,8 @@ This application provides an intuitive interface for managing employee records, 
 
 ```text
 employee-management-app/
+```text
+employee-management-app/
 ├── application/             # Oracle APEX Split Application Export
 │   ├── deployment/          # Deployment scripts
 │   ├── pages/               # Individual APEX page SQL files
@@ -52,9 +54,11 @@ employee-management-app/
 │   ├── designations.txt     # Job titles & salary ranges
 │   ├── employees.txt        # Employee records
 │   └── project.txt          # Project table data
-├── screenshots/             # Application screenshots for README
-│   └── dashboard.png        # Application screenshots
+├── Department_lov_img       # Screenshot
+├── Project_Calendar_img     # Screenshot
+├── employee_directory_img   # Screenshot
 └── README.md                # Project documentation
+
 
 ## 🚀 Installation & Setup Guide
 
@@ -79,3 +83,4 @@ employee-management-app/
 ## 📝 License & Contact
 
 Created by **Juby Varghese** - feel free to reach out or connect!
+
